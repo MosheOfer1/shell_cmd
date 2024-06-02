@@ -1,0 +1,67 @@
+# MyShell Example Commands
+
+## Basic Commands
+# List files in the current directory
+ls -l
+
+# Display the current directory
+pwd
+
+## Environment Variables
+# Set a variable and use it
+myvar=value
+echo $myvar
+
+## Custom Prompt
+# Change the shell prompt
+prompt = myshell>
+# Verify the prompt change by running any command
+echo "New prompt set!"
+
+## I/O Redirection
+# Redirect output to a file
+ls > output.txt
+# Append output to a file
+ls >> output.txt
+# Redirect input from a file
+cat < output.txt
+
+## Pipelines
+# Use a pipeline to filter output
+ls | grep .c
+
+## Control Structures
+# Conditional execution
+if true
+then echo "This is true"
+else echo "This is false"
+fi
+
+if false
+then echo "This will not be printed"
+else echo "This is false"
+fi
+
+## Signal Handling
+# Press Ctrl+C to test SIGINT handling
+# Should print: "You typed Control-C!"
+
+## Change Directory
+# Navigate to the home directory
+cd
+# Verify the current directory
+pwd
+
+# Navigate to a specific directory
+cd /tmp
+# Verify the current directory
+pwd
+
+## Variable Assignment
+# Assign a value to a variable
+myvar=test_value
+# Print the variable value
+echo $myvar
+
+# Demonstrate variable usage in a command
+echo "The value of myvar is $myvar"
